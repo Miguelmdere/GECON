@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - GECON Empresarial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="assets/logo-gecon.png" alt="GECON Empresarial" class="logo-img">
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="casos.html">Casos de Sucesso</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Entre em Contato</h1>
+            <p class="page-description">
+                Estamos prontos para ajudar sua empresa a alcançar novos patamares
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                <!-- Contact Form -->
+                <div class="content-card">
+                    <h3 style="margin-bottom: 1.5rem;">Solicite um Diagnóstico Gratuito</h3>
+                    <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome Completo *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Empresa</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sector" class="form-label">Setor de Atuação</label>
+                            <select id="sector" name="sector" class="form-select">
+                                <option value="">Selecione...</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="industria">Indústria</option>
+                                <option value="comercio">Comércio</option>
+                                <option value="servicos">Serviços</option>
+                                <option value="logistica">Logística</option>
+                                <option value="saude">Saúde</option>
+                                <option value="educacao">Educação</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Serviço de Interesse</label>
+                            <select id="service" name="service" class="form-select">
+                                <option value="">Selecione...</option>
+                                <option value="gestao-mudancas">Gestão de Mudanças</option>
+                                <option value="planejamento-estrategico">Planejamento Estratégico</option>
+                                <option value="recuperacao-empresarial">Recuperação Empresarial</option>
+                                <option value="gestao-financeira">Gestão Financeira</option>
+                                <option value="otimizacao-processos">Otimização de Processos</option>
+                                <option value="gestao-pessoas">Gestão de Pessoas</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem *</label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Conte-nos um pouco sobre os desafios da sua empresa..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Solicitar Contato
+                        </button>
+
+                        <p style="font-size: 0.875rem; color: var(--text-light); text-align: center;">
+                            * Campos obrigatórios
+                        </p>
+                    </form>
+                    <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center;"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="content-card" style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem;">Informações de Contato</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="color: var(--primary-color);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Telefone</h4>
+                                    <p style="color: var(--text-light);"><a href="tel:+5511999999999" style="color: var(--text-light); text-decoration: none;">(11) 99999-9999</a></p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="color: var(--primary-color);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">E-mail</h4>
+                                    <p style="color: var(--text-light);"><a href="mailto:contato@gecon.com.br" style="color: var(--text-light); text-decoration: none;">contato@gecon.com.br</a></p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="color: var(--primary-color);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Endereço</h4>
+                                    <p style="color: var(--text-light);">São Paulo, SP - Brasil</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="color: var(--primary-color);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Horário de Atendimento</h4>
+                                    <p style="color: var(--text-light);">Segunda a Sexta: 9h às 18h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 1rem;">Por que nos escolher?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="color: var(--primary-color); font-weight: bold;">✓</span>
+                                <span style="color: var(--text-light);">Diagnóstico gratuito e sem compromisso</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="color: var(--primary-color); font-weight: bold;">✓</span>
+                                <span style="color: var(--text-light);">Resposta em até 24 horas</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="color: var(--primary-color); font-weight: bold;">✓</span>
+                                <span style="color: var(--text-light);">Mais de 15 anos de experiência</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="color: var(--primary-color); font-weight: bold;">✓</span>
+                                <span style="color: var(--text-light);">Resultados comprovados em diversos setores</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="color: var(--primary-color); font-weight: bold;">✓</span>
+                                <span style="color: var(--text-light);">Atendimento personalizado e humanizado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="why-choose" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Como funciona o diagnóstico gratuito?</h3>
+                    <p style="color: var(--text-light);">
+                        O diagnóstico gratuito é uma análise inicial da sua empresa onde identificamos os principais 
+                        desafios e oportunidades. Realizamos uma reunião de 1-2 horas com os gestores para entender 
+                        a situação atual e apresentar possíveis caminhos de transformação. Não há compromisso de contratação.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Quanto tempo dura um projeto de consultoria?</h3>
+                    <p style="color: var(--text-light);">
+                        A duração varia conforme o escopo do projeto. Projetos de otimização podem durar de 3 a 6 meses, 
+                        enquanto transformações mais profundas podem levar de 6 a 12 meses. Nossa metodologia ágil garante 
+                        resultados visíveis já nos primeiros 30 dias.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Qual o investimento necessário?</h3>
+                    <p style="color: var(--text-light);">
+                        O investimento é definido após o diagnóstico inicial, pois depende do escopo do projeto, 
+                        porte da empresa e objetivos específicos. Trabalhamos com modelos flexíveis de contratação e 
+                        focamos sempre no ROI (retorno sobre investimento) para nossos clientes.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Vocês atendem empresas de todos os portes?</h3>
+                    <p style="color: var(--text-light);">
+                        Sim! Atendemos desde pequenas empresas até grandes corporações. Nossa metodologia é adaptável 
+                        à realidade de cada cliente, sempre com foco em resultados concretos e sustentáveis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo-gecon.png" alt="GECON Empresarial">
+                    </div>
+                    <p class="footer-description">
+                        Consultoria empresarial especializada em gestão de mudanças e recuperação de negócios.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="casos.html">Casos de Sucesso</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:contato@gecon.com.br">contato@gecon.com.br</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>São Paulo, SP - Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GECON Empresarial. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
