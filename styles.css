@@ -107,7 +107,10 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.85) 0%, rgba(21, 128, 61, 0.85) 100%), url('assets/pexels-pixabay-209224.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -352,6 +355,7 @@ section {
 /* CTA Section */
 .cta {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    padding: 80px 0;
     color: white;
     text-align: center;
 }
@@ -634,6 +638,74 @@ section {
 
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scroll behaviour for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Testimonials logos carousel */
+.testimonials-logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.logo-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 0.5rem 0.25rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.logo-track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.logo-track::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.12);
+    border-radius: 4px;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 160px;
+    padding: 16px;
+    background: var(--bg-white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.logo-btn {
+    appearance: none;
+    border: none;
+    background: var(--bg-white);
+    color: var(--text-dark);
+    padding: 0.5rem 0.75rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+}
+
+.logo-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 /* Loading State */

@@ -9,7 +9,7 @@
 <body>
     <!-- Header/Navigation -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar"> 
             <div class="container">
                 <div class="nav-content">
                     <a href="index.html" class="logo">
@@ -62,7 +62,7 @@
     <section class="services">
         <div class="container">
             <h2 class="section-title">Sua Empresa no Topo!</h2>
-            <p class="section-subtitle">Somos focados em melhorar os resultados dos nossos clientes</p>
+            <p class="section-subtitle">Somos focados em melhorar os resultados dos nossos clientes.</p>
             
             <div class="services-grid">
                 <div class="service-card">
@@ -119,6 +119,12 @@
             <p class="section-subtitle" style="text-align: center; margin-bottom: 3rem; font-size: 1.125rem; color: var(--text-light);">
                 Somos focados em melhorar os resultados dos nossos clientes. Entre em contato e vamos agendar uma visita para diagnosticar as soluções para sua empresa.
             </p>
+            <!-- Clientes: galeria de logos (loaded dinamically from /assets/logo_empre/) -->
+            <div class="testimonials-logos" aria-label="Logos de clientes">
+                <button class="logo-btn logo-btn--prev" aria-label="Anterior">‹</button>
+                <div class="logo-track" id="logoTrack" role="list"></div>
+                <button class="logo-btn logo-btn--next" aria-label="Próximo">›</button>
+            </div>
         </div>
     </section>
 
@@ -127,49 +133,6 @@
         <div class="container">
             <h2 class="section-title">Por Que Escolher a GECON</h2>
             <p class="section-subtitle">Experiência em gestão de mudanças e gerenciamento de recuperação</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Experiência Comprovada</h3>
-                    <p class="feature-description">
-                        Mais de 15 anos transformando empresas em todo Brasil
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Resultados Rápidos</h3>
-                    <p class="feature-description">
-                        Metodologia ágil com primeiros resultados em 30 dias
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Acompanhamento Contínuo</h3>
-                    <p class="feature-description">
-                        Suporte integral durante toda a jornada de transformação
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- CTA Section -->
